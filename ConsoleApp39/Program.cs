@@ -91,7 +91,7 @@ namespace ConsoleApp39
                 }
             }
 
-            if (!isSuccess)
+            if (!isSuccess||!isError)
             {
                 Console.WriteLine("tesdiq kodu vaxti bitdi...");
             }
