@@ -55,10 +55,13 @@ namespace ConsoleApp39
                 for (int i = 0; i < 180; i++)
 
                 {
-
+                    if (i == 0)
+                    {
+                        isError = true;
+                    }
                     Thread.Sleep(1000);
 
-                    isError = true;
+                   
 
                 }
 
@@ -66,6 +69,7 @@ namespace ConsoleApp39
 
             });
 
+            minute.Start();
             for (int i = 0; i < 3; i++)
             {
                 Console.Write($"Tesdiq kodunuzu daxil edin: ");
